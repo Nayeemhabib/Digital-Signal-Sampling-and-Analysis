@@ -8,7 +8,13 @@ The main objectives of this project are:-
 4. To understand signal interpolation and upsampling
 Through this project, users gain hands-on experience with practical DSP tasks while reinforcing theoretical knowledge.
 ## Theoretical Background.
-### Sampling and the Nyquist-Shannon Theorem
+### Sampling and the Nyquist-Shannon Theorem:-
 - A continuous-time signal can be perfectly reconstructed if sampled at a rate at least twice the highest frequency component (Nyquist rate).
 - Under-sampling (< 2B) leads to aliasing, where high-frequency components fold back into the lower frequency range.
 - Sampling theory is fundamental for digital communication, audio/video processing, and modern electronics.
+### Discrete Fourier Transform (DFT):-
+- The DFT converts a finite-duration discrete signal from the time domain to the frequency domain.
+- DFT size (N):-
+  - Small N → poor resolution, broad peaks, high spectral leakage.
+  - Large N → sharp peaks, better resolution, reduced leakage.
+ - Used in spectrum analysis, filter design, and signal diagnostics.
