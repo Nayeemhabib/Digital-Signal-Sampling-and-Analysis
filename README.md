@@ -18,3 +18,55 @@ Through this project, users gain hands-on experience with practical DSP tasks wh
   - Small N → poor resolution, broad peaks, high spectral leakage.
   - Large N → sharp peaks, better resolution, reduced leakage.
  - Used in spectrum analysis, filter design, and signal diagnostics.
+### Aliasing:-
+- Occurs when the sampling frequency is below the Nyquist rate.
+- High-frequency components appear as spurious low-frequency signals, making reconstruction impossible.
+- Critical in digital audio, communications, and sensor signal processing.
+## Fourier Series and Non-Sinusoidal Signals:-
+- Complex periodic signals (e.g., square waves) can be decomposed into sum of sinusoids (Fourier series).
+- Square waves contain odd harmonics of the fundamental frequency with amplitudes decreasing inversely with harmonic number.
+- Understanding harmonic content is key for signal compression, harmonic distortion analysis, and waveform synthesis.
+##  Interpolation / Upsampling:-
+- Upsampling increases the sampling rate of a discrete signal to create a higher-resolution representation.
+- Steps:-
+  - Zero-padding: Insert zeros between samples.
+  - Low-pass filtering: Remove spectral images, reconstruct smooth signal.
+  - Applications: audio resampling, image resizing, digital communications, and anti-aliasing.
+# Experiments & Key Observations.
+## Effect of DFT Size on Spectral Resolution
+- Observation:-
+  - N = 16 → coarse spectrum, peaks broad and less distinct.
+  - N = 32 → better, peaks more visible.
+  - N = 128, 256, 512 → sharp peaks at 1 kHz, 2 kHz, 4 kHz.
+- Insights:-
+ - Increasing N → improves frequency resolution.
+ - Larger DFT reduces spectral leakage and helps identify closely spaced frequency components.
+ - Shows the trade-off between computational cost and spectral accuracy.
+## Aliasing Due to Undersampling
+- Observation:-
+  - Fs = 8 kHz → minor distortion at 4 kHz component.
+  - Fs = 5 kHz → 4 kHz aliases to 1 kHz, amplitude distortion observed.
+  - Fs = 4 kHz → severe aliasing, higher frequency components misrepresente.
+- Insights:-
+  - Demonstrates the importance of Nyquist criterion in practical DSP.
+  - Highlights how undersampling can lead to irreversible data loss.
+  - Real-world relevance in audio recording, communications, and instrumentation.
+##  Spectrum of a Square Wave:-
+- Observation:-
+- - Frequency spectrum contains only odd harmonics (1 kHz, 3 kHz, 5 kHz…)
+- - Harmonics’ amplitude decreases inversely with harmonic order
+- - Fundamental frequency dominates, higher-order harmonics gradually fade
+- Insights:
+-- Confirms Fourier series decomposition for periodic, non-sinusoidal signals.
+-- Useful for harmonic distortion analysis, filter design, and waveform synthesis.
+-- Visualizes spectral energy distribution in complex signals.
+## Signal Interpolation (Upsampling).
+- Observation:
+-- Interpolated signal closely matches a directly sampled high-rate signal.
+-- Zero-padding + low-pass filtering removes spectral replicas.
+-- Smooth reconstructed waveform observed in time domain.
+- Insights:-
+-- Illustrates practical upsampling technique for signal reconstruction.
+-- Shows how interpolation maintains signal integrity while increasing sample rate.
+-- Applied in digital audio/video, communications, and sensor data processing.
+-- Highlights the effect of Butterworth low-pass filter in eliminating unwanted spectral images.
