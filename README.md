@@ -53,32 +53,32 @@ Through this project, users gain hands-on experience with practical DSP tasks wh
   - Real-world relevance in audio recording, communications, and instrumentation.
 ##  Spectrum of a Square Wave:-
 - Observation:-
- - Frequency spectrum contains only odd harmonics (1 kHz, 3 kHz, 5 kHz…)
- - Harmonics’ amplitude decreases inversely with harmonic order
- - Fundamental frequency dominates, higher-order harmonics gradually fade
+  - Frequency spectrum contains only odd harmonics (1 kHz, 3 kHz, 5 kHz…)
+  - Harmonics’ amplitude decreases inversely with harmonic order
+  - Fundamental frequency dominates, higher-order harmonics gradually fade
 - Insights:
- - Confirms Fourier series decomposition for periodic, non-sinusoidal signals.
- - Useful for harmonic distortion analysis, filter design, and waveform synthesis.
- - Visualizes spectral energy distribution in complex signals.
+  - Confirms Fourier series decomposition for periodic, non-sinusoidal signals.
+  - Useful for harmonic distortion analysis, filter design, and waveform synthesis.
+  - Visualizes spectral energy distribution in complex signals.
 ## Signal Interpolation (Upsampling).
 - Observation:
- - Interpolated signal closely matches a directly sampled high-rate signal.
- - Zero-padding + low-pass filtering removes spectral replicas.
- - Smooth reconstructed waveform observed in time domain.
+  - Interpolated signal closely matches a directly sampled high-rate signal.
+  - Zero-padding + low-pass filtering removes spectral replicas.
+  - Smooth reconstructed waveform observed in time domain.
 - Insights:-
- - Illustrates practical upsampling technique for signal reconstruction.
- - Shows how interpolation maintains signal integrity while increasing sample rate.
- - Applied in digital audio/video, communications, and sensor data processing.
- - Highlights the effect of Butterworth low-pass filter in eliminating unwanted spectral images.
+  - Illustrates practical upsampling technique for signal reconstruction.
+  - Shows how interpolation maintains signal integrity while increasing sample rate.
+  - Applied in digital audio/video, communications, and sensor data processing.
+  - Highlights the effect of Butterworth low-pass filter in eliminating unwanted spectral images.
 ## Code Structure:-
- ├── DFT_Resolution.m             # Analyze effect of DFT size on spectrum
- ├── Aliasing_Demonstration.m     # Study of undersampling and aliasing
- ├── SquareWave_Spectrum.m        # Frequency spectrum of square wave and harmonics
- ├── Upsampling_Interpolation.m   # Signal upsampling and interpolation
- └── README.md                    # Project overview, theory, and observations.
- - Each MATLAB script generates time-domain and frequency-domain plots.
- - Scripts are modular and independently executable.
- - Plots are automatically saved as PNG files for documentation.
+  - DFT_Resolution.m               - Analyze effect of DFT size on spectrum
+  - Aliasing_Demonstration.m       - Study of undersampling and aliasing
+  - SquareWave_Spectrum.m          - Frequency spectrum of square wave and harmonics
+  - Upsampling_Interpolation.m     - Signal upsampling and interpolation
+  - README.md                      - Project overview, theory, and observations.
+  - Each MATLAB script generates time-domain and frequency-domain plots.
+  - Scripts are modular and independently executable.
+  - Plots are automatically saved as PNG files for documentation.
 ## Tools & Libraries:-
  - MATLAB – computation, FFT, plotting.
  - Signal Processing Toolbox – for interpolation, filtering, and analysis.
