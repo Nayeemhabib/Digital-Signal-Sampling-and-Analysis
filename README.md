@@ -94,7 +94,7 @@ Through this project, users gain hands-on experience with practical DSP tasks wh
 - Digital communications – ensuring Nyquist compliance, avoiding aliasing
 - Instrumentation – measuring and reconstructing sensor signals accurately
 - Embedded systems – DSP in controllers, IoT devices, and signal acquisition
-##Project Highlights
+## Project Highlights:-
 - Hands-on MATLAB simulations demonstrating real-world DSP concepts
 - Emphasis on theory understanding and practical visualization
 - Modular, clean, and ready-to-use scripts for experimentation
