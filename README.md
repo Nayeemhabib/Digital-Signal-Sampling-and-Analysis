@@ -39,9 +39,9 @@ Through this project, users gain hands-on experience with practical DSP tasks wh
   - N = 32 → better, peaks more visible.
   - N = 128, 256, 512 → sharp peaks at 1 kHz, 2 kHz, 4 kHz.
 - Insights:-
- - Increasing N → improves frequency resolution.
- - Larger DFT reduces spectral leakage and helps identify closely spaced frequency components.
- - Shows the trade-off between computational cost and spectral accuracy.
+  - Increasing N → improves frequency resolution.
+  - Larger DFT reduces spectral leakage and helps identify closely spaced frequency components.
+  - Shows the trade-off between computational cost and spectral accuracy.
 ## Aliasing Due to Undersampling
 - Observation:-
   - Fs = 8 kHz → minor distortion at 4 kHz component.
